@@ -1,0 +1,7 @@
+.sidebarLayout {
+  float: left;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid black;
+  width: 75px;
+}
