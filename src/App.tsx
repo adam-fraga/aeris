@@ -4,7 +4,9 @@ import { Header } from "./components/partials/Header";
 import { AppWrapper } from "./components/wrappers/AppWrapper";
 import { MainSectionWrapper } from "./components/wrappers/MainSectionWrapper";
 import { Container } from "./components/wrappers/Container";
-import { Menu } from "./components/menus/Menu";
+import { MenuWrapper } from "./components/menus/MenuWrapper";
+import { Navigation } from "./components/menus/Navigation";
+import { UserPortal } from "./components/menus/UserPortal";
 import "./App.css";
 
 function App() {
@@ -12,12 +14,17 @@ function App() {
     <>
       <AppWrapper>
         <Sidebar>
-          <Menu />
+          <MenuWrapper rowLayout={false}>
+            <Navigation rowLayout={false} />
+          </MenuWrapper>
         </Sidebar>
         <Container>
-          {/* Contain header & MainSectionWrapper */}
+          {/* Container wrapp Header & MainSectionWrapper */}
           <Header>
-            <Menu />
+            <MenuWrapper rowLayout={true}>
+              <Navigation rowLayout={true} />
+              <UserPortal />
+            </MenuWrapper>
           </Header>
           <MainSectionWrapper>
             {/* This secction changes depending on the menu used. */}

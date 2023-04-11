@@ -1,0 +1,8 @@
+#navigation {
+  display: flex;
+}
+
+#navigationCol {
+  display: flex;
+  flex-direction: column;
+}
