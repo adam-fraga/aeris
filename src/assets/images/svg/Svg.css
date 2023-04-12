@@ -1,6 +1,12 @@
 .svgGlobal {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   fill: #58d68d;
   opacity: 0.8;
+}
+
+#svgSend {
+  position: absolute;
+  right: 10px;
+  top: 20%;
 }

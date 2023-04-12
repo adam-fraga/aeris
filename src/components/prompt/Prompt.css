@@ -1,0 +1,19 @@
+#prompt {
+  width: 100%;
+  height: 20%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#chatInputWrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+#chatInput {
+  width: 100%;
+  font-size: 0.9rem;
+  caret-color: gray;
+}
