@@ -8,5 +8,9 @@ interface MenuProps extends PropsWithChildren {
 }
 
 export const MenuWrapper: FC<MenuProps> = ({ children, rowLayout }) => {
-  return <div id={rowLayout ? "menu" : "menuColumn"}>{children}</div>;
+  return (
+    <div className={rowLayout ? "wrapperMenuHeader" : "wrapperMenuSidebar"}>
+      {children}
+    </div>
+  );
 };

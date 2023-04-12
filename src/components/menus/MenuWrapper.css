@@ -1,8 +1,12 @@
-#menu {
+.wrapperMenuHeader {
   display: flex;
+  background-color: #808080;
+  width: 100%;
 }
 
-#menuColumn {
+.wrapperMenuSidebar {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #808080;
 }

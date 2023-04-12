@@ -1,0 +1,8 @@
+#appMainLogo {
+  width: 50px;
+  height: 50px;
+  fill: #58d68d;
+  stroke: gray;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}

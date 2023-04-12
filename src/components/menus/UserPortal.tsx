@@ -1,11 +1,12 @@
 import React from "react";
+import { SvgUser } from "../../assets/images/svg/SvgUser";
+import "./UserPortal.css";
 
 export const UserPortal = (props: {}) => {
   return (
-    <div>
-      <a href='' className='user_pannel'>
-
-      </a>
+    <div id='userPortal'>
+      User portal
+      <SvgUser />
     </div>
   );
 };

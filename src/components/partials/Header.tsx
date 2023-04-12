@@ -6,7 +6,6 @@ const headerMenu = [];
 export const Header = (props: PropsWithChildren) => {
   return (
     <header id="header"className=''>
-      Header
       {props.children}
     </header>
   );
