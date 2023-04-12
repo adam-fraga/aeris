@@ -8,6 +8,7 @@ import { MenuWrapper } from "./components/menus/MenuWrapper";
 import { Navigation } from "./components/menus/Navigation";
 import { UserPortal } from "./components/menus/UserPortal";
 import "./App.css";
+import { ChatBoxWrapper } from "./components/wrappers/ChatBoxWrapper";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           </Header>
           <MainSectionWrapper>
             {/* This secction changes depending on the menu used. */}
+            <ChatBoxWrapper />
           </MainSectionWrapper>
         </Container>
       </AppWrapper>
