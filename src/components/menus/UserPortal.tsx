@@ -5,7 +5,6 @@ import "./UserPortal.css";
 export const UserPortal = (props: {}) => {
   return (
     <div id='userPortal'>
-      User portal
       <SvgUser />
     </div>
   );
