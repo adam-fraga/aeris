@@ -1,8 +1,28 @@
-#appMainLogo {
+.mainLogo {
   width: 50px;
   height: 50px;
   fill: #58d68d;
   stroke: gray;
+  margin-top: 10px;
   margin-bottom: 10px;
-  opacity: 0.8;
+  opacity: 0.6;
+}
+
+.backgroundLogo {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  fill: #58d68d;
+  stroke: gray;
+  opacity: 0.05;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.textLogo {
+  color: white;
+  font-size: 2rem;
 }

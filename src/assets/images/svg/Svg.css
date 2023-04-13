@@ -2,7 +2,7 @@
   width: 25px;
   height: 25px;
   fill: #58d68d;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 #svgSend {
@@ -10,3 +10,5 @@
   right: 10px;
   top: 20%;
 }
+
+

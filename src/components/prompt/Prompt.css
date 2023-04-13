@@ -10,10 +10,12 @@
   display: flex;
   width: 100%;
   position: relative;
+  background-color: #33373f;
 }
 
 #chatInput {
   width: 100%;
   font-size: 0.9rem;
   caret-color: gray;
+  background-color: #33373f;
 }
