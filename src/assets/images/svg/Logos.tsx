@@ -1,13 +1,11 @@
 import React, { FC } from "react";
 import "./Logos.css";
 
-interface LogosProps {
-  isMainLogos: boolean;
-}
+interface LogosProps { }
 
-export const Logos: FC<LogosProps> = ({ isMainLogos }) => {
+export const Logos: FC<LogosProps> = ({ }) => {
   return (
-    <div className={isMainLogos ? "mainLogo" : "backgroundLogo"}>
+    <div className='mainLogo'>
       <svg
         version='1.1'
         id='Слой_1'
@@ -50,7 +48,6 @@ export const Logos: FC<LogosProps> = ({ isMainLogos }) => {
           />
         </g>
       </svg>
-      {!isMainLogos && <p className="textLogo">Aeris</p>}
     </div>
   );
 };
