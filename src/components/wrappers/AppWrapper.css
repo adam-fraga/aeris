@@ -1,5 +1,4 @@
 #appWrapper {
   display: flex;
   flex-wrap: nowrap;
-  border: 1px solid black;
 }
