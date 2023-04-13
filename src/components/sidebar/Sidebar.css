@@ -1,9 +1,8 @@
-.sidebarLayout {
+#sidebar {
   float: left;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75px;
-  padding: 10px;
+  width: 5%;
   border: 1px solid black;
 }

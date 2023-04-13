@@ -9,6 +9,8 @@ import { Navigation } from "./components/menus/Navigation";
 import { UserPortal } from "./components/menus/UserPortal";
 import "./App.css";
 import { ChatBoxWrapper } from "./components/wrappers/ChatBoxWrapper";
+import { SetttingsWrapper } from "./components/wrappers/SetttingsWrapper";
+import { Settings } from "./components/settings/Settings";
 
 function App() {
   return (
@@ -20,7 +22,6 @@ function App() {
           </MenuWrapper>
         </Sidebar>
         <Container>
-          {/* Container wrapp Header & MainSectionWrapper */}
           <Header>
             <MenuWrapper rowLayout={true}>
               <Navigation rowLayout={true} />
@@ -28,8 +29,11 @@ function App() {
             </MenuWrapper>
           </Header>
           <MainSectionWrapper>
-            {/* This secction changes depending on the menu used. */}
             <ChatBoxWrapper />
+            <SetttingsWrapper>
+              <Settings />
+              <Settings />
+            </SetttingsWrapper>
           </MainSectionWrapper>
         </Container>
       </AppWrapper>

@@ -5,7 +5,7 @@ import { Logos } from "../../assets/images/svg/Logos";
 
 export const Sidebar = (props: PropsWithChildren) => {
   return (
-    <div className='sidebarLayout'>
+    <div id='sidebar'>
       <Logos />
       {props.children}
     </div>

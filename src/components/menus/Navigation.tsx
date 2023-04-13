@@ -17,7 +17,6 @@ export const Navigation: FC<NavigationProps> = ({ rowLayout }) => {
     <>
       {!rowLayout && (
         <nav id='navSidebar'>
-          <p>Navigation</p>
           <SvgHome />
           <SvgCommentAltEdit />
           <SvgCommentAltLines />
@@ -29,7 +28,6 @@ export const Navigation: FC<NavigationProps> = ({ rowLayout }) => {
 
       {rowLayout && (
         <nav id='navHeader'>
-          <p>Navigation</p>
           <a href=''>Other</a>
           <a href=''>Menu</a>
           <a href=''>For</a>

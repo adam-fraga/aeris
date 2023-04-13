@@ -1,3 +1,5 @@
 #container {
-flex-grow: 3;
+  height: 100%;
+  /* TODO Modify width compting final border */
+  width: 93%;
 }
