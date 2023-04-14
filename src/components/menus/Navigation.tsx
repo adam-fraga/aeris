@@ -28,10 +28,7 @@ export const Navigation: FC<NavigationProps> = ({ rowLayout }) => {
 
       {rowLayout && (
         <nav id='navHeader'>
-          <a href=''>Other</a>
-          <a href=''>Menu</a>
-          <a href=''>For</a>
-          <a href=''>Whatever</a>
+          <h1 className='mainTitle'>Aeris</h1>
         </nav>
       )}
     </>

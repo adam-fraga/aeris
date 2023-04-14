@@ -4,13 +4,12 @@
   fill: #14a0c0;
   opacity: 0.9;
   padding: 7px;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
 }
 
+.svgGlobal:hover,
 .svgUserPortal:hover {
-  cursor: pointer;
-}
-
-.svgGlobal:hover {
   cursor: pointer;
   fill: #282a31;
   stroke: #14a0c0;
@@ -37,9 +36,12 @@
 }
 
 .svgUserPortal {
+  margin-block: auto;
   width: 25px;
   height: 25px;
-  margin-block: auto;
   fill: #14a0c0;
   opacity: 0.9;
+  padding: 5px;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
 }
