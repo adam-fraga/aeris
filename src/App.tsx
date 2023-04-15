@@ -4,13 +4,13 @@ import { Header } from "./components/partials/Header";
 import { AppWrapper } from "./components/wrappers/AppWrapper";
 import { MainSectionWrapper } from "./components/wrappers/MainSectionWrapper";
 import { Container } from "./components/wrappers/Container";
-import { MenuWrapper } from "./components/menus/MenuWrapper";
+import { MenuWrapper } from "./components/wrappers/MenuWrapper";
 import { Navigation } from "./components/menus/Navigation";
 import { UserPortal } from "./components/menus/UserPortal";
 import "./App.css";
-import { ChatBoxWrapper } from "./components/wrappers/ChatBoxWrapper";
+import { MainViewAreaWrapper } from "./components/wrappers/MainViewAreaWrapper";
 import { SetttingsWrapper } from "./components/wrappers/SetttingsWrapper";
-import { Settings } from "./components/settings/Settings";
+import { Settings } from "./components/dynamic-views/Settings";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
             </MenuWrapper>
           </Header>
           <MainSectionWrapper>
-            <ChatBoxWrapper />
+            <MainViewAreaWrapper />
             <SetttingsWrapper>
               <Settings />
               <Settings />

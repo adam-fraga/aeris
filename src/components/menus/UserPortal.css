@@ -1,5 +1,10 @@
 #userPortal {
+  position: relative;
+  display: flex;
   width: 30%;
   display: flex;
-  border: solid 1px black;
+  justify-content: end;
+  padding: 10px;
+  background-color: #282a31;
+  justify-content: space-evenly;
 }

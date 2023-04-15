@@ -1,5 +1,6 @@
 #container {
   height: 100%;
   /* TODO Modify width compting final border */
-  width: 93%;
+  width: 95%;
+  height: 100%;
 }

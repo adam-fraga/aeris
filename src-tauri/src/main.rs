@@ -1,5 +1,8 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+pub mod http_request;
+pub mod request_builder;
+
 use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -28,6 +31,14 @@ fn osef() -> Option<Person> {
     };
     Some(adam)
 }
+
+// async fn ai_request() {
+//     let input = "Hello chat gpt";
+//     let response = http_request::get_response_from_ai_assistant(input)
+//         .await
+//         .unwrap();
+//     println!("{:?}", response);
+// }
 
 fn main() {
     tauri::Builder::default()
