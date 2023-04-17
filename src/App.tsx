@@ -12,6 +12,8 @@ import { MainViewAreaWrapper } from "./components/wrappers/MainViewAreaWrapper";
 import { SetttingsWrapper } from "./components/wrappers/SetttingsWrapper";
 import { Settings } from "./components/dynamic-views/Settings";
 
+/* invoke("ai_request").then((data) => console.log(data)); */
+
 function App() {
   return (
     <>

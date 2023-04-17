@@ -4,9 +4,9 @@ use std::env;
 
 pub async fn get_response_from_ai_assistant(
     message: &str,
-    temperature: Option<f64>,
-    _token: Option<u32>,
-    _model: Option<&str>,
+    temperature: f64,
+    _token: u32,
+    _model: &str,
 ) -> Result<String, reqwest::Error> {
     let client = Client::new();
     let _temperature = 0.7;

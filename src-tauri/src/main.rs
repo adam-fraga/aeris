@@ -32,17 +32,21 @@ fn osef() -> Option<Person> {
     Some(adam)
 }
 
-// async fn ai_request() {
-//     let input = "Hello chat gpt";
-//     let response = http_request::get_response_from_ai_assistant(input)
-//         .await
-//         .unwrap();
-//     println!("{:?}", response);
-// }
+#[tauri::command]
+async fn ai_request() -> String {
+    let message = "Hello chat gpt";
+    let temperature = 0.6;
+    let model = "gpt-3.5-turbo";
+    let token = 100;
+    let response = http_request::get_response_from_ai_assistant(message, temperature, token, model)
+        .await
+        .unwrap();
+    response
+}
 
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet, osef])
+        .invoke_handler(tauri::generate_handler![greet, osef, ai_request])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
